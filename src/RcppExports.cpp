@@ -24,6 +24,66 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
+// ContinuousInC
+double ContinuousInC(arma::vec x, arma::vec y);
+RcppExport SEXP _mixcausal_ContinuousInC(SEXP xSEXP, SEXP ySEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< arma::vec >::type x(xSEXP);
+    Rcpp::traits::input_parameter< arma::vec >::type y(ySEXP);
+    rcpp_result_gen = Rcpp::wrap(ContinuousInC(x, y));
+    return rcpp_result_gen;
+END_RCPP
+}
+// BinaryContiInC
+double BinaryContiInC(arma::vec x, arma::vec y);
+RcppExport SEXP _mixcausal_BinaryContiInC(SEXP xSEXP, SEXP ySEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< arma::vec >::type x(xSEXP);
+    Rcpp::traits::input_parameter< arma::vec >::type y(ySEXP);
+    rcpp_result_gen = Rcpp::wrap(BinaryContiInC(x, y));
+    return rcpp_result_gen;
+END_RCPP
+}
+// BinaryInC
+double BinaryInC(arma::vec x, arma::vec y);
+RcppExport SEXP _mixcausal_BinaryInC(SEXP xSEXP, SEXP ySEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< arma::vec >::type x(xSEXP);
+    Rcpp::traits::input_parameter< arma::vec >::type y(ySEXP);
+    rcpp_result_gen = Rcpp::wrap(BinaryInC(x, y));
+    return rcpp_result_gen;
+END_RCPP
+}
+// OrdinalOrdinal
+double OrdinalOrdinal(arma::vec x, arma::vec y);
+RcppExport SEXP _mixcausal_OrdinalOrdinal(SEXP xSEXP, SEXP ySEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< arma::vec >::type x(xSEXP);
+    Rcpp::traits::input_parameter< arma::vec >::type y(ySEXP);
+    rcpp_result_gen = Rcpp::wrap(OrdinalOrdinal(x, y));
+    return rcpp_result_gen;
+END_RCPP
+}
+// CategoricalCategorical
+double CategoricalCategorical(arma::vec x, arma::vec y);
+RcppExport SEXP _mixcausal_CategoricalCategorical(SEXP xSEXP, SEXP ySEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< arma::vec >::type x(xSEXP);
+    Rcpp::traits::input_parameter< arma::vec >::type y(ySEXP);
+    rcpp_result_gen = Rcpp::wrap(CategoricalCategorical(x, y));
+    return rcpp_result_gen;
+END_RCPP
+}
 // LGC_sigma_AllType
 arma::mat LGC_sigma_AllType(arma::mat x, std::vector<std::string> label);
 RcppExport SEXP _mixcausal_LGC_sigma_AllType(SEXP xSEXP, SEXP labelSEXP) {
@@ -51,6 +111,11 @@ END_RCPP
 
 static const R_CallMethodDef CallEntries[] = {
     {"_mixcausal_kendall_tau", (DL_FUNC) &_mixcausal_kendall_tau, 2},
+    {"_mixcausal_ContinuousInC", (DL_FUNC) &_mixcausal_ContinuousInC, 2},
+    {"_mixcausal_BinaryContiInC", (DL_FUNC) &_mixcausal_BinaryContiInC, 2},
+    {"_mixcausal_BinaryInC", (DL_FUNC) &_mixcausal_BinaryInC, 2},
+    {"_mixcausal_OrdinalOrdinal", (DL_FUNC) &_mixcausal_OrdinalOrdinal, 2},
+    {"_mixcausal_CategoricalCategorical", (DL_FUNC) &_mixcausal_CategoricalCategorical, 2},
     {"_mixcausal_LGC_sigma_AllType", (DL_FUNC) &_mixcausal_LGC_sigma_AllType, 2},
     {"_mixcausal_LGC_sigma_BC", (DL_FUNC) &_mixcausal_LGC_sigma_BC, 2},
     {NULL, NULL, 0}

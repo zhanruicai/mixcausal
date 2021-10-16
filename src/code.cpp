@@ -111,7 +111,11 @@ double CDFnorm(double x)
   return res;
 }
 
-
+//' Compute the Kendall' tau rank correlation
+//'
+//' @param x A vector
+//' @param y A vector
+//' @export
 // [[Rcpp::export]]
 double kendall_tau (arma::vec x, arma::vec y)
 {
@@ -130,12 +134,19 @@ double kendall_tau (arma::vec x, arma::vec y)
   return 2.0*(na+nd-nb-nc)/(n*(n-1));
 }
 
+//' Estimate the correlation for continuous data based on Kendall's rank cor
+//'
+//' @param x A vector of continuous variables
+//' @param y A vector of continuous variables
+//' @export
+// [[Rcpp::export]]
 double ContinuousInC(arma::vec x, arma::vec y)
 {
   double tau = kendall_tau(x, y);
   double sighat = std::sin(tau*M_PI/2);
   return sighat;
 }
+
 
 double binaryContiFunc(double x, double deltak, double tau)
 {
@@ -149,7 +160,12 @@ double easyDeriBinaryContiFunc(double x, double deltak, double tau)
   return d1;
 }
 
-
+//' Estimate the correlation for binary and continuous data based on Kendall's rank cor
+//'
+//' @param x A vector of binary variables
+//' @param y A vector of continuous variables
+//' @export
+// [[Rcpp::export]]
 double BinaryContiInC(arma::vec x, arma::vec y)
 {
   double tau = kendall_tau(x, y);
@@ -182,6 +198,12 @@ double easyDeribinaryFunc(double x, double deltak, double deltal, double tau)
   return d1;
 }
 
+//' Estimate the correlation for binary data based on Kendall's rank cor
+//'
+//' @param x A vector of binary variables
+//' @param y A vector of binary variables
+//' @export
+// [[Rcpp::export]]
 double BinaryInC(arma::vec x, arma::vec y)
 {
   double tau = kendall_tau(x, y);
@@ -226,7 +248,12 @@ arma::mat generate_dummy_Ordinal(arma::vec x){
   return dummy;
 }
 
-
+//' Estimate the correlation for ordinal data based on Kendall's rank cor
+//'
+//' @param x A vector of ordinal variables
+//' @param y A vector of ordinal variables
+//' @export
+// [[Rcpp::export]]
 double OrdinalOrdinal(arma::vec x, arma::vec y)
 {
   arma::mat m1 = generate_dummy_Ordinal(x);
@@ -243,6 +270,12 @@ double OrdinalOrdinal(arma::vec x, arma::vec y)
   return (xnew/(n1*n2));
 }
 
+//' Estimate the correlation for categorical data based on Kendall's rank cor
+//'
+//' @param x A vector of categorical variables
+//' @param y A vector of categorical variables
+//' @export
+// [[Rcpp::export]]
 double CategoricalCategorical(arma::vec x, arma::vec y)
 {
   arma::mat m1 = generate_dummy_Categorical(x);
