@@ -236,7 +236,7 @@ double OrdinalOrdinal(arma::vec x, arma::vec y)
   for(i=0; i<n1; i++){
     for(j=0; j<n2; j++){
       double a = BinaryInC(m1.col(i),m2.col(j));
-      if(::isnan(a)) {a = 0;}
+      if(std::isnan(a)) {a = 0;}
       xnew = xnew + a;
     }
   }
@@ -312,7 +312,7 @@ double OrdinallBinary(arma::vec x, arma::vec y)
   double xnew=0.0, a;
   for(i=0; i<n1; i++){
     a = BinaryInC(m1.col(i), y);
-    if(::isnan(a)) {a = 0;}
+    if(std::isnan(a)) {a = 0;}
     xnew = xnew + a;
   }
   return (xnew/n1);
