@@ -1,0 +1,21 @@
+{
+    "args": [
+        "-I/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include",
+        "-I/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1",
+        "-I/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include",
+        "-I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include",
+        "-I/Library/Developer/CommandLineTools/usr/include",
+        "-I/Library/Frameworks/R.framework/Versions/4.1/Resources/library/Rcpp/include",
+        "-I/Library/Frameworks/R.framework/Versions/4.1/Resources/library/RcppArmadillo/include",
+        "-I/Library/Frameworks/R.framework/Versions/4.1/Resources/library/RcppEigen/include",
+        "-I/Library/Frameworks/R.framework/Versions/4.1/Resources/library/RcppNumerical/include",
+        "-std=gnu++11",
+        "-I/Library/Frameworks/R.framework/Resources/include",
+        "-DNDEBUG",
+        "-I/usr/local/include",
+        "-fPIC"
+    ],
+    "pch": "RcppArmadillo",
+    "is_cpp": true,
+    "hash": "163435216516343496941634349694"
+}
