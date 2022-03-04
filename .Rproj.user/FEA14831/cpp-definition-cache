@@ -1,7 +1,260 @@
 [
     {
         "file": "/Users/zhanruicai/mixcausal/src/code.cpp",
-        "file_last_write": 1634393192.0,
-        "definitions": []
+        "file_last_write": 1646364637.0,
+        "definitions": [
+            {
+                "usr": "c:@S@BiNormal",
+                "kind": 2,
+                "parent_name": "",
+                "name": "BiNormal",
+                "file": "/Users/zhanruicai/mixcausal/src/code.cpp",
+                "line": 14,
+                "column": 7
+            },
+            {
+                "usr": "c:@S@BiNormal@F@operator()#&1I#",
+                "kind": 7,
+                "parent_name": "BiNormal",
+                "name": "operator(Numer::Constvec &)",
+                "file": "/Users/zhanruicai/mixcausal/src/code.cpp",
+                "line": 28,
+                "column": 10
+            },
+            {
+                "usr": "c:@F@bivaNormal#d#d#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "bivaNormal(double, double, double)",
+                "file": "/Users/zhanruicai/mixcausal/src/code.cpp",
+                "line": 36,
+                "column": 8
+            },
+            {
+                "usr": "c:@S@BiNormalDeri",
+                "kind": 2,
+                "parent_name": "",
+                "name": "BiNormalDeri",
+                "file": "/Users/zhanruicai/mixcausal/src/code.cpp",
+                "line": 50,
+                "column": 7
+            },
+            {
+                "usr": "c:@S@BiNormalDeri@F@operator()#&1I#",
+                "kind": 7,
+                "parent_name": "BiNormalDeri",
+                "name": "operator(Numer::Constvec &)",
+                "file": "/Users/zhanruicai/mixcausal/src/code.cpp",
+                "line": 66,
+                "column": 10
+            },
+            {
+                "usr": "c:@F@bivaNormalDeri#d#d#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "bivaNormalDeri(double, double, double)",
+                "file": "/Users/zhanruicai/mixcausal/src/code.cpp",
+                "line": 74,
+                "column": 8
+            },
+            {
+                "usr": "c:@S@NormPDF",
+                "kind": 2,
+                "parent_name": "",
+                "name": "NormPDF",
+                "file": "/Users/zhanruicai/mixcausal/src/code.cpp",
+                "line": 88,
+                "column": 7
+            },
+            {
+                "usr": "c:@S@NormPDF@F@operator()#&1d#1",
+                "kind": 7,
+                "parent_name": "NormPDF",
+                "name": "operator(const double &)",
+                "file": "/Users/zhanruicai/mixcausal/src/code.cpp",
+                "line": 96,
+                "column": 10
+            },
+            {
+                "usr": "c:@F@CDFnorm#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "CDFnorm(double)",
+                "file": "/Users/zhanruicai/mixcausal/src/code.cpp",
+                "line": 103,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@kendall_tau#$@N@arma@S@Col>#d#S0_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "kendall_tau(arma::vec, arma::vec)",
+                "file": "/Users/zhanruicai/mixcausal/src/code.cpp",
+                "line": 120,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@ContinuousInC#$@N@arma@S@Col>#d#S0_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "ContinuousInC(arma::vec, arma::vec)",
+                "file": "/Users/zhanruicai/mixcausal/src/code.cpp",
+                "line": 145,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@binaryContiFunc#d#d#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "binaryContiFunc(double, double, double)",
+                "file": "/Users/zhanruicai/mixcausal/src/code.cpp",
+                "line": 153,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@easyDeriBinaryContiFunc#d#d#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "easyDeriBinaryContiFunc(double, double, double)",
+                "file": "/Users/zhanruicai/mixcausal/src/code.cpp",
+                "line": 158,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@BinaryContiInC#$@N@arma@S@Col>#d#S0_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "BinaryContiInC(arma::vec, arma::vec)",
+                "file": "/Users/zhanruicai/mixcausal/src/code.cpp",
+                "line": 171,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@binaryFunc#d#d#d#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "binaryFunc(double, double, double, double)",
+                "file": "/Users/zhanruicai/mixcausal/src/code.cpp",
+                "line": 189,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@easyDeribinaryFunc#d#d#d#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "easyDeribinaryFunc(double, double, double, double)",
+                "file": "/Users/zhanruicai/mixcausal/src/code.cpp",
+                "line": 196,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@BinaryInC#$@N@arma@S@Col>#d#S0_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "BinaryInC(arma::vec, arma::vec)",
+                "file": "/Users/zhanruicai/mixcausal/src/code.cpp",
+                "line": 209,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@generate_dummy_Categorical#$@N@arma@S@Col>#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "generate_dummy_Categorical(arma::vec)",
+                "file": "/Users/zhanruicai/mixcausal/src/code.cpp",
+                "line": 228,
+                "column": 11
+            },
+            {
+                "usr": "c:@F@generate_dummy_Ordinal#$@N@arma@S@Col>#d#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "generate_dummy_Ordinal(arma::vec)",
+                "file": "/Users/zhanruicai/mixcausal/src/code.cpp",
+                "line": 240,
+                "column": 11
+            },
+            {
+                "usr": "c:@F@OrdinalOrdinal#$@N@arma@S@Col>#d#S0_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "OrdinalOrdinal(arma::vec, arma::vec)",
+                "file": "/Users/zhanruicai/mixcausal/src/code.cpp",
+                "line": 259,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@CategoricalCategorical#$@N@arma@S@Col>#d#S0_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "CategoricalCategorical(arma::vec, arma::vec)",
+                "file": "/Users/zhanruicai/mixcausal/src/code.cpp",
+                "line": 281,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@CategoricalOrdinal#$@N@arma@S@Col>#d#S0_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "CategoricalOrdinal(arma::vec, arma::vec)",
+                "file": "/Users/zhanruicai/mixcausal/src/code.cpp",
+                "line": 295,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@OrdinalContiuous#$@N@arma@S@Col>#d#S0_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "OrdinalContiuous(arma::vec, arma::vec)",
+                "file": "/Users/zhanruicai/mixcausal/src/code.cpp",
+                "line": 309,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@CategoricalContiuous#$@N@arma@S@Col>#d#S0_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "CategoricalContiuous(arma::vec, arma::vec)",
+                "file": "/Users/zhanruicai/mixcausal/src/code.cpp",
+                "line": 320,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@CategoricalBinary#$@N@arma@S@Col>#d#S0_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "CategoricalBinary(arma::vec, arma::vec)",
+                "file": "/Users/zhanruicai/mixcausal/src/code.cpp",
+                "line": 331,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@OrdinallBinary#$@N@arma@S@Col>#d#S0_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "OrdinallBinary(arma::vec, arma::vec)",
+                "file": "/Users/zhanruicai/mixcausal/src/code.cpp",
+                "line": 343,
+                "column": 8
+            },
+            {
+                "usr": "c:@F@LGC_sigma_AllType#$@N@arma@S@Mat>#d#I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "LGC_sigma_AllType(arma::mat, int)",
+                "file": "/Users/zhanruicai/mixcausal/src/code.cpp",
+                "line": 362,
+                "column": 11
+            },
+            {
+                "usr": "c:@F@LGC_sigma_BC#$@N@arma@S@Mat>#d#I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "LGC_sigma_BC(arma::mat, int)",
+                "file": "/Users/zhanruicai/mixcausal/src/code.cpp",
+                "line": 401,
+                "column": 11
+            }
+        ]
     }
 ]
